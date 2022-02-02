@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication(exclude = SecurityAutoConfiguration.class)
-@PropertySource("classpath:application-${spring.profiles.active.default}")
 public class SpringBootMicroservice1ProductApplication
 {
 
