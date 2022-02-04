@@ -34,6 +34,7 @@ public class ProductService extends AbstractProductService
     {
         try
         {
+            entity.setCreated(new Date());
             return productRepository.save(entity);
         }
         catch (IllegalArgumentException e)
